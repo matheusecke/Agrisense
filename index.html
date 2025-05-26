@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AgriSense</title>
+  <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1 class="main-title">AgriSense</h1>
+  <div class="umidade" id="umidade">Aguardando dados...</div>
+  <div id="status">Status: Desconectado</div>
+  <div id="clima">Clima: Aguardando dados...</div>
+
+  <!-- BOTÂO PARA DEBUG -->
+  <!--<button onclick="enviarMensagemTeste()">Enviar Mensagem de Teste</button> -->
+  
+  <button id="toggleDebug" class="debug-button">Mostrar Debug Log</button>
+  <div id="debugContainer" class="debug-container hidden">
+    <div id="debug">Debug Log:<br></div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
