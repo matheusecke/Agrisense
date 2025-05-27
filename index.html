@@ -7,9 +7,23 @@
 </head>
 <body>
   <h1 class="main-title">AgriSense</h1>
-  <div class="umidade" id="umidade">Aguardando dados...</div>
+  
+  <div class="umidade-container">
+    <div class="umidade" id="umidade">Aguardando dados...</div>
+    <div class="humidity-bar">
+      <div class="humidity-progress" id="humidity-progress" style="width: 0%"></div>
+    </div>
+  </div>
+
   <div id="status">Status: Desconectado</div>
-  <div id="clima">Clima: Aguardando dados...</div>
+  
+  <div class="weather-container">
+    <div class="location-search">
+      <input type="text" id="locationInput" placeholder="Digite sua cidade (ex: São Paulo, BR)" />
+      <button id="updateLocation" class="update-button">Atualizar</button>
+    </div>
+    <div id="clima">Clima: Aguardando dados...</div>
+  </div>
 
   <!-- BOTÂO PARA DEBUG -->
   <!--<button onclick="enviarMensagemTeste()">Enviar Mensagem de Teste</button> -->
