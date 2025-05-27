@@ -53,20 +53,9 @@ body {
     font-size: 16px;
 }
 
-#clima {
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 20px auto;
-    color: #1a73e8;
-    font-size: 1.4rem;
-    font-weight: 500;
-}
-
 .debug-button {
-    background-color: #5ba2ff;
+    background-color: #1a73e8;
+    color: white;
     margin: 0;
     padding: 12px 24px;
     border-radius: 50px;
@@ -74,11 +63,11 @@ body {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    box-shadow: 0 4px 12px rgba(26, 115, 232, 0.3);
     transition: all 0.3s ease;
     font-weight: 500;
     letter-spacing: 0.5px;
     z-index: 1000;
+    border: none;
 }
 
 .debug-button:hover {
@@ -163,13 +152,14 @@ body {
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 600px;
-    margin: 20px auto;
+    margin: 40px auto;
 }
 
 .location-search {
     display: flex;
     gap: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    justify-content: center;
 }
 
 #locationInput {
@@ -179,6 +169,7 @@ body {
     border-radius: 8px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
+    max-width: 350px;
 }
 
 #locationInput:focus {
@@ -205,5 +196,6 @@ body {
     color: #1a73e8;
     font-size: 1.4rem;
     font-weight: 500;
-    margin-top: 10px;
+    margin: 10px 0 0 0;
+    text-align: center;
 }
