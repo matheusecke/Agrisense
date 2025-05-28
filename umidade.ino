@@ -2,13 +2,13 @@
 #include <PubSubClient.h>
 
 // ---- CONFIG Wi-Fi ----
-const char* ssid = "APEK_Workspace";
-const char* password = "dreamteam";
+const char* ssid = "sua_rede_wifi";  // altere para a sua rede wifi
+const char* password = "sua_senha_wifi"; // altere para a sua senha wifi
 
 // ---- CONFIG MQTT ----
 const char* mqtt_server = "broker.emqx.io";
 const int mqtt_port = 1883;
-const char* mqtt_topic = "matheus/sensor/umidade";
+const char* mqtt_topic = "seu/tópico/mqtt"; // altere para o seu tópico mqtt (ex: agrisense/sensor/umidade)
 const char* mqtt_client_id = "ESP8266Client_Umidade";
 
 // ---- SENSOR ----

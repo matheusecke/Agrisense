@@ -29,9 +29,10 @@ AgriSense é um sistema de irrigação inteligente voltado para jardinagem, hort
 1. Clone este repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/agrisense.git
+   git clone https://github.com/matheusecke/agrisense.git
    cd agrisense
    ```
 2. Abra o código do firmware no Arduino IDE (`firmware/umidade.ino`), configure sua rede Wi‑Fi e publique no tópico MQTT.
+3. Substitua os valores da rede wifi, e do tópico MQTT (tanto no umidade.ino, quando no app.js)
 3. No diretório, abra `index.html` em um navegador. O dashboard conecta-se automaticamente ao broker e exibe a umidade e clima.
-4. Gere sua API Key em [https://openweathermap.org/api](https://openweathermap.org/api) e ajuste `app.js` para habilitar previsões de chuva.
+4. Gere sua API Key em [https://openweathermap.org/api](https://openweathermap.org/api) e ajuste a variável "apiKey" em `app.js` para habilitar previsões de chuva.

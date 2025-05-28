@@ -21,7 +21,7 @@ function addDebugLog(message) {
   // Função para enviar mensagem de teste
   function enviarMensagemTeste() {
     const mensagem = "TESTE_" + new Date().toLocaleTimeString();
-    client.publish('matheus/sensor/umidade', mensagem, function(err) {
+    client.publish('agrisense/sensor/umidade', mensagem, function(err) {
       if (!err) {
         addDebugLog(`Mensagem de teste enviada: ${mensagem}`);
       } else {
@@ -50,9 +50,9 @@ function addDebugLog(message) {
     document.getElementById("status").innerText = "Status: Conectado";
   
     // Inscreve no tópico
-    client.subscribe('matheus/sensor/umidade', function (err) {
+    client.subscribe('agrisense/sensor/umidade', function (err) {
       if (!err) {
-        addDebugLog('Inscrito no tópico matheus/sensor/umidade');
+        addDebugLog('Inscrito no tópico agrisense/sensor/umidade');
       } else {
         addDebugLog(`Erro ao se inscrever: ${err}`);
       }
